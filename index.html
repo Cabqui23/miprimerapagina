@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a5bc636235.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="encabezado">
+        
+        <div class="left-content">
+            <a href="index.html"><i class="fa-solid fa-heart"></i></a> 
+            <span>Mi web</span>
+           
+        </div>
+        <div class="container">
+
+            <nav>
+                <input type="checkbox" id="check" />
+               <label for="check" class="checkbtn">
+               <i class="fa-solid fa-bars"></i>
+              </label>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de Mí</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h1>BIENVENIDOS A MI PRIMER PROYECTO WEB</h1>
+                <img src="senior.jpg" alt="img">
+                <p>Esta es mi primera página web, donde compartiré información sobre mis habilidades y servicios como creador de paginas web</p>
+            </div>
+        </section>
+
+        <section id="acerca">
+            <div class="container">
+                <h2>Acerca de Mí</h2>
+                <p>¡Hola! Soy Carlos Benites , 24 años de Peru .</p>
+                
+            </div>
+        </section>
+
+        <section id="trabajos">
+            <div class="container">
+                <h2>Mis Trabajos</h2>
+                <p>Aquí puedes encontraras informacion de mis trabajos</p>
+                <div class="grid-container"></div>
+                <div id="box"><img src="analista.jpg" alt="Imagen 1" class="imagen-box"></div>
+                <div id="box2">
+                    <img src="programacion.jpg" alt="Imagen 2" class="imagen-box">
+                </div>
+                <div id="box3">
+                    <img src="COMPU.jpg" alt="Imagen 3" class="imagen-box">
+                </div>
+            </div>
+            <ul><li>Programador web</li><li>Proyectos Web</li><li>Mantenimiento de paginas web</li></ul>
+        
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <h2>Servicios</h2>
+                <p>Ofrezco los siguientes servicios:</p>
+                <ul>
+                    <li>Creacion de paginas web</li>
+                    <li>Mantenimiento de paginas web </li>
+                    <li>Otros servicios de programacion</li>
+                
+                </ul>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Redes Sociales</h3>
+    
+            <ul>
+            
+                
+                <li><a href="https://www.Facebook.com/">Facebook</a></li>
+                <li><a href="https://www.Instagram.com/">Instagram</a></li>
+                <li><a href="https://www.Youtube.com/">YouTube</a></li>
+                
+                
+            </ul>
+           <img src="whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.webp" alt="" id="W">
+            
+        </div>
+    </footer>
+    <footer class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+    
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="pepe@gmail.com"
+                required
+              />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+              <button>Enviar</button>
+            </div>
+            <p class="alertas" id="alertas"></p>
+        </form>
+</body>
+
+</html>
+
+  

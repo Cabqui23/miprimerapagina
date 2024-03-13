@@ -1,0 +1,407 @@
+body{background-color: rgb(243, 241, 237);
+    font-family: "Poppins", sans-serif}
+h1 { text-align: center;
+}
+
+    header {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido del header a la derecha */
+    padding-right: 20px; /* Agrega un espacio de 20px en el lado derecho del header */
+}
+
+
+  nav ul{
+ display: flex;
+  gap: 1.5em;em
+  }
+ol, ul{list-style-type:none}
+a{
+text-decoration:none;
+}
+body{margin: 0;
+padding: 0}
+a i {color: white;
+font size:10em;
+padding:1em}
+header nav ul li a{color: white}
+
+img{width:5%}
+
+main img {
+    width: 100vw; /* Ancho al 100% del viewport */
+    height: 65vh; /* Alto al 100% del viewport */
+    object-fit: cover
+ /* Cubre todo el contenedor manteniendo la proporción de aspecto */
+}
+main {
+    font-size: 22px; /* Tamaño de letra de 20 píxeles */
+}
+p{margin-left:30px}
+h1{margin-left:30px}
+h2{margin-left:30px}
+h3{margin-left:30px}
+footer{background-color: bisque;width:100%}
+h3 {color: brown;}
+a{
+    font-weight: bold; /* Aplicar negrita al texto */
+    color: brown; /* Mantener el color original del texto */
+}
+h3{
+    font-size: 30px; /* Aumenta el tamaño del texto a 20 píxeles */
+}
+footer div img{position: fixed;bottom:22px;right:39px;}
+
+
+        
+header {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos hacia los extremos */
+    padding: 10px 20px; /* Espaciado interno del header */
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.left-content span {
+    margin-left: 5px; /* Espacio entre el icono y el texto */
+    color: white; /* Color del texto */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px; /* Espacio entre elementos del menú */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos verticalmente */
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    .left-content {
+        margin-bottom: 10px; /* Agrega un margen inferior */
+    }
+}
+@media (max-width: 768px) {
+    header {
+        background-color: burlywood; /* Cambia el color de fondo del header cuando la pantalla se achica */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta toda la lista de navegación */
+    }
+
+    .left-content span {
+        display: inline; /* Muestra solo el span que contiene "Mi web" */
+    }
+}
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {.checkbtn{display:block}
+
+#encabezado ul {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#2c3e50;
+    text-align:center;
+    top:80px;
+    left:100%;
+    transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left:0%;
+        display:block;
+    }
+    #encabezado nav ul li {display:block;
+margin:50px 0;
+line-height:30px;}
+#encabezado nav ul li a{font-size:20px}
+#check:checked ~ .checkbtn {color: #2c2c2c;;}}
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 20px; /* Ajusta la posición vertical */
+    right: 20px; /* Ajusta la posición horizontal */
+    cursor: pointer;
+}
+#box{
+    border:5px solid #000;
+    border-radius: 10px 40px 40px 10px;
+    width: 400px;
+    height: 300px;
+    background-color:#ccc;
+}
+#box2{
+    border:5px solid #000;
+    border-radius: 10px 40px 40px 10px;
+    width: 400px;
+    height: 300px;
+    background-color:#ccc;
+}
+#box3{
+    border:5px solid #000;
+    border-radius: 10px 40px 40px 10px;
+    width: 400px;
+    height: 300px;
+    background-color:#ccc;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Crea columnas automáticas que se ajustan al tamaño del contenedor */
+    grid-gap: 10px; /* Espacio entre los boxes */
+    padding-left: 20px; /* Ajusta el espaciado entre el primer box y el borde izquierdo */
+    justify-content: flex-start; /* Alinear los boxes al principio del contenedor */
+}
+
+#box, #box2, #box3 {
+    border: 5px solid #000;
+    border-radius: 10px 40px 40px 10px;
+    background-color: #ccc;
+    overflow: hidden; /* Evita que la imagen se salga del box */
+}
+
+.imagen-box {
+    width: 100%;
+    height: 100%; /* Haz que la imagen llene todo el box */
+    object-fit: cover; /* Escala la imagen para que cubra todo el box */
+}
+#box, #box2, #box3 {
+    border: 5px solid #000;
+    border-radius: 10px 40px 40px 10px;
+    width: 400px;
+    height: 300px;
+    background-color: #ccc;
+    display: inline-block; /* Cambio a inline-block para colocarlos uno al lado del otro */
+    margin-right: 100px; /* Añadir un margen derecho para separar los elementos */
+}
+#box , #box2 ,#box3 {margin:50px;}
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+.forn-row input[type="text"],
+.form-row input[type="email"]{
+background-color: #bdbdbd;
+border: 0;
+border-radius:6px;
+widt:100%;
+padding:7px;
+font-size:14px
+}
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+  .form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+    margin-left: 120px;}
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;}
+        
+/* Alinear elementos "Redes Sociales", "Facebook", "Instagram" y "YouTube" a la izquierda */
+footer ul {
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+footer h3 {
+    text-align: left; /* Alinear el texto a la izquierda */
+}
